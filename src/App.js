@@ -6,10 +6,8 @@ function App() {
 	return (
 		<div id="app">
 			<header>
-				<ul>
-					<Logo logoName="Logo" />
-					<Menu values={values} />
-				</ul>
+				<Logo logoName="Logo" />
+				<Menu values={values} />
 			</header>
 		</div>
 	);

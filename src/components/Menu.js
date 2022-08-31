@@ -2,11 +2,11 @@ import style from './style.css';
 
 function Menu({values}){
 	return(
-		<ul>
-			<li>{values[0]}</li>
-			<li>{values[1]}</li>
-			<li>{values[2]}</li>
-		</ul>
+		<nav>
+			<a href="#">{values[0]}</a>
+			<a href="#">{values[1]}</a>
+			<a href="#">{values[2]}</a>
+		</nav>
 	)
 }
 

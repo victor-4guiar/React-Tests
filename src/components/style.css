@@ -1,0 +1,39 @@
+a{
+	text-decoration: none;
+	color: #dd5;
+	padding: 10px;
+	transition: 200ms color linear;
+}
+
+a:hover{
+	color: #ffa;
+}
+
+.logo{
+	background-color: #dd5;
+	width: 64px;
+	height: 64px;
+	border-radius: 10px;
+	align-items: center;
+	text-align: center;
+	font-size: 0.7em;
+	transition: 200ms background-color linear;
+}
+
+.logo h1{
+	margin: 20px auto 10px auto;
+}
+
+.logo:hover{
+	background-color: #ffa;
+}
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;
+	}
+	
+	nav{
+		padding: 10px 0px;
+	}
+}
