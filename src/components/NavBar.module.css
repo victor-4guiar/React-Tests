@@ -1,0 +1,20 @@
+.navLi{
+	margin: 0 2em;
+}
+
+.navLi a{
+	margin: 0 2em;
+	color: #ccc;
+	text-decoration: none;
+	border-radius: 3px;
+	transition: 200ms;
+	font-weight: bold;
+}
+
+.navLi a:hover{
+	background-color: #888;
+	color: #222;
+	padding: .5em;
+	border-radius: 5px;
+	margin: 1.5em;
+}

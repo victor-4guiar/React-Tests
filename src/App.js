@@ -1,12 +1,8 @@
-import Header from './components/header/Header';
-import image from './components/header/icon.jpg';
+import Header from './components/Header';
 
-function App() {
-	let url = image;
-	return(	
-		<div>
-			<Header companyIcon={url} companyName="Tâmara" routesList={["Home", "Company", "Contact"]} />
-		</div>
+function App(){
+	return(
+		<Header companyName="معشقش" navList={["Home", "Company", "Contact"]} />
 	);
 }
 
