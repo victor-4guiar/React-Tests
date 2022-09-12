@@ -1,8 +1,8 @@
-import Header from './components/Header';
+import Header from "./components/Header";
 
 function App(){
 	return(
-		<Header companyName="معشقش" navList={["Home", "Company", "Contact"]} />
+		<Header companyName="Company" navList={["Home", "Company", "Name"]} limit={2} />
 	);
 }
 
