@@ -9,3 +9,18 @@ body{
 	font-family: Arial, Helvetica, Verdana, sans-serif;
 	color: white;
 }
+
+.section{
+	background-color: #888;
+	padding: 10px;
+	height: 400px;
+	width: 400px;
+	margin: 3em auto;
+	border-radius: 5px;
+	align-items: center;
+	align-items: center;
+}
+
+.section form{
+	margin: 100px auto;
+}

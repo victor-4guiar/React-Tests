@@ -1,0 +1,10 @@
+.input{
+	display: block;
+	padding: 10px;
+	border: none;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 20px auto 20px auto;
+	background-color: #222;
+	color: #ccc;
+}
