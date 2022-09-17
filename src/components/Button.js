@@ -1,8 +1,10 @@
 import styles from './Button.module.css';
 
-function Button(){
+function Button({text, type}){
 	return(
-		<h1>A</h1>
+		<div className={styles.button_container}>
+			<input type={type} value={text} />
+		</div>
 	)
 }
 

@@ -1,0 +1,18 @@
+.button_container{
+	display: flex;
+}
+
+.button_container input{
+	margin: auto;
+	border: none;
+	background-color: #222;
+	padding: 8px 15px;
+	color: #777;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.button_container input:hover{
+	background: #444;
+	color: #777;
+}

@@ -1,4 +1,4 @@
-import styles from './Input.module.css'
+import styles from './Input.module.css';
 
 function Input({text, type, placeholder, inputNick}){
 	return(

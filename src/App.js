@@ -6,7 +6,7 @@ function App(){
 	return(
 		<>
 			<Header companyName="Logo" navList={["Home", "Company", "Contact"]} />
-			<section>
+			<section className="sec_container">
 				<form>
 					<Input inputNick="nome" text="Digite seu nome:" type="text" placeholder="Meu nome é..." />
 					<Input inputNick="email" text="Digite eu email:" type="email" placeholder="Meu email é..." />
