@@ -1,26 +1,25 @@
-.header{
-	display: flex;
-	justify-content: space-between;
+.header_container{
 	background-color: #222;
-	padding: 10px;
+	color: #ccc;
+	padding: 1em;
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	min-height: 5em;
 }
 
-.logo{
-	color: white;
+.logo_container{
+	margin-left: 1.1em;
 	cursor: pointer;
-	margin-left: 2em;
 }
 
 @media (max-width: 700px){
-	.header{
+	.header_container{
 		flex-direction: column;
-		padding-bottom: 20px;
 	}
 	
-	.logo{
-		padding-bottom: 20px;
-		padding-top: 10px;
+	.logo_container{
+		margin-bottom: 1.1em;
+		margin-left: 0;
 	}
 }

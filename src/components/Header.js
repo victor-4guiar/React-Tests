@@ -1,13 +1,13 @@
 import NavBar from './NavBar';
 import styles from './Header.module.css';
 
-function Header({navList, companyName}){
+function Header({companyName, navList}){
 	return(
-		<header className={styles.header}>
-			<div className={styles.logo}>
+		<header className={styles.header_container}>
+			<div className={styles.logo_container}>
 				<h1>{companyName}</h1>
 			</div>
-			<NavBar navList={navList} />
+			<NavBar navList={navList}/>
 		</header>
 	)
 }

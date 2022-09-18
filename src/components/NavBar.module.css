@@ -1,16 +1,11 @@
-.nav_container{
-	margin-right: 1em; 
-}
-
 .nav_container a{
+	color: #ccc;
 	text-decoration: none;
-	padding: 1em;
-	color: white;
-	transition: 500ms;
+	margin: 0 1.1em;
 	font-weight: bold;
+	transition: 500ms;
 }
 
 .nav_container a:hover{
-	color: #dd8;
+	color: #dd5;
 }
-
