@@ -1,0 +1,7 @@
+.block_container{
+	height: 64px;
+	width: 64px;
+	background-color: #ccc;
+	border-radius: 10px;
+	margin: 1em;
+}
