@@ -4,7 +4,7 @@ import MsgBox from './components/MsgBox/MsgBox';
 function App(){
 	return(
 		<>
-			<MsgBox />
+			<MsgBox title={["a", "b"]} text={["a", "b"]} confirm={["a", "b"]} limit={1}/>
 		</>
 	);
 }

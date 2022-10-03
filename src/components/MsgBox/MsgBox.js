@@ -1,17 +1,21 @@
 import xicon from './xicon.png';
 import styles from './MsgBox.module.css';
+import Return from './Return.js';
+import React, {useState} from 'react';
 
-function MsgBox(){
+function MsgBox({title, text, confirm, limit}){
 	let messages = {
-		title: ["Victor Says", "Zanes Says", "You Says"],
-		text: ["Olá", "Olá crl", "Toma no cu viu"],
-		confirm: ["Ok", "Ok²", "XD"],
-		ordem: 0
+		title: title,
+		text: text,
+		confirm: confirm,
+		limit: limit
 	}
 	
-	function cond(){
-		if(messages.ordem < messages.title.length()){
-			messages.ordem+=1;
+	const [ord, setCount] = useState(0);
+	
+	function reb(){
+		if (ord < messages.limit){
+			setCount(ord + 1);
 		}else{
 			document.getElementById('MsgBox').remove();
 		}
@@ -20,14 +24,14 @@ function MsgBox(){
 	return(
 		<div id="MsgBox" className={styles.box}>
 			<div className={styles.header_box}>
-				<h1>{messages.title[messages.ordem]}</h1><img src={xicon} width="32px" height="32px" />
+				<h1>{messages.title[ord]}</h1><img src={xicon} width="32px" height="32px" />
 			</div>
 			<div className={styles.body_box}>
-				<p>{messages.text[messages.ordem]}</p>
+				<p>{messages.text[ord]}</p>
 			</div>
 			<div className={styles.confirm_box}>
 				<div className={styles.cent}>
-					<input className={styles.button_box} type="button" value={messages.confirm[messages.ordem]} onClick={cond} />
+					<input className={styles.button_box} type="button" value={messages.confirm[ord]} onClick={reb} />
 				</div>
 			</div>
 		</div>
