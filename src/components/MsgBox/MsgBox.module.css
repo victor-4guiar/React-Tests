@@ -1,0 +1,64 @@
+.box{
+	background-color: #ccc;
+	width: 350px;
+	height: 200px;
+	margin: 2em auto;
+	flex-direction: column;
+	border: 4px solid #666;
+	position: relative;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.header_box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	image-rendering: pixelated;
+	background-color: #888;
+	padding: 5px;
+	color: #eee;
+}
+
+.header_box h1{
+	font-size: 1.2em;
+	margin-left: .5em;
+}
+
+.body_box{
+	padding: 15px;
+	color: #222;
+	font-weight: 400;
+	margin: auto;
+}
+
+.confirm_box{
+	width: 100%;
+	position: absolute;
+	padding: 10px;
+	bottom: 0;
+}
+
+.cent{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.button_box{
+	background-color: #666;
+	color: #ccc;
+	border-radius: 3px;
+	border: none;
+	padding: 5px;
+	width: 100%;
+	max-width: 80px;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: auto;
+}
+
+.button_box:hover{
+	background-color: #777;
+	color: #ddd;
+}
