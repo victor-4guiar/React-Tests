@@ -4,7 +4,7 @@ import MsgBox from './components/MsgBox/MsgBox';
 function App(){
 	return(
 		<>
-			<MsgBox title={["a", "b"]} text={["a", "b"]} confirm={["a", "b"]} limit={1}/>
+<MsgBox title={["Victor Message", "Zanes Message"]} text={["Olá, tudo bem?", "Bua haha"]} confirm={["Sí", "XD"]} limit={1} evento="<Mud/>"/>
 		</>
 	);
 }

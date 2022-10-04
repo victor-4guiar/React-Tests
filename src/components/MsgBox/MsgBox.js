@@ -1,13 +1,14 @@
 import xicon from './xicon.png';
 import styles from './MsgBox.module.css';
-import Return from './Return.js';
+import Mud from './Mud';
 import React, {useState} from 'react';
 
-function MsgBox({title, text, confirm, limit}){
+function MsgBox({title, text, confirm, limit, evento}){
 	let messages = {
 		title: title,
 		text: text,
 		confirm: confirm,
+		evento: evento,
 		limit: limit
 	}
 	
@@ -17,14 +18,19 @@ function MsgBox({title, text, confirm, limit}){
 		if (ord < messages.limit){
 			setCount(ord + 1);
 		}else{
-			document.getElementById('MsgBox').remove();
+			if(messages.evento){
+				window.alert('esd');
+				document.getElementById('MsgBox').remove();
+			}else{
+				document.getElementById('MsgBox').remove();
+			}
 		}
 	}
 	
 	return(
 		<div id="MsgBox" className={styles.box}>
 			<div className={styles.header_box}>
-				<h1>{messages.title[ord]}</h1><img src={xicon} width="32px" height="32px" />
+				<h1>{messages.title[ord]}</h1><img src={xicon} width="24px" height="24px" onClick={reb} />
 			</div>
 			<div className={styles.body_box}>
 				<p>{messages.text[ord]}</p>
