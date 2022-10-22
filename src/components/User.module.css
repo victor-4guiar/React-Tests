@@ -1,0 +1,33 @@
+.user_container{
+	background-color: #666;
+	max-width: 600px;
+	border-radius: 10px;
+	margin: 2em auto;
+}
+
+.nickpfp{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.user_pfp{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid #666;
+	margin-top: -50px;
+}
+
+.nick{
+	color: #222;
+	margin-left: .5em;
+	font-size: 2.2em;
+}
+
+.user_background{
+	width: 100%;
+	max-width: 100%;
+	height: 9em;
+	border-radius: 10px 10px 0px 0px;
+}
